@@ -67,6 +67,7 @@ jobs:
         run: echo "Published image digest ${{ steps.meta.outputs.digest }}"
         
  dispatch:
+      needs: build-and-push
       name: "Dispatch signal to consumers"
       if: github.event.pull_request.merged == true
       runs-on: ubuntu-latest
