@@ -13,7 +13,8 @@ namespace ApiExample.Controllers
         {
             return new User
             {
-                Name = "Erlend Berntsen"
+                FirstName = "Erlend",
+                LastName = "Berntsen"
             };
         }
 
